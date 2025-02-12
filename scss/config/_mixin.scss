@@ -1,4 +1,4 @@
-/* Mixing para margenes y paddings */
+// Mixing para margenes y paddings 
 
 @mixin margin-padding-general($all){
     margin: $all;
@@ -10,17 +10,27 @@
     padding: $top, $right, $bottom, $left
 }
 
-/*Mixing para estilos flexibles*/
+// Mixing para estilos flexibles
 
 @mixin flex-ai-jc-center(){
 
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-/*Mixing para Width y Height*/
+@mixin flex-jc-center(){
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-ai-center(){
+
+    display:flex;
+    align-items: center;
+}
+
+// Mixing para Width y Height
 
 @mixin widht-height($width,$height){
     width: $width;

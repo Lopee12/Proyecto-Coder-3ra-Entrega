@@ -1,8 +1,7 @@
-@import 'mixin';
+@use 'mixin' as *;
 
 *{
-    padding: 0;
-    margin: 0;
+    @include margin-padding-general(0);
 }
 
 html, body{

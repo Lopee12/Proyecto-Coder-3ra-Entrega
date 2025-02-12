@@ -13,19 +13,19 @@
 
     <!-- Encabezado de la pagina -->
 
-    <header>
-        <section class="container-fluid indice-container">
+    <header class="cabeza">
+        <section class="container-fluid cabeza__indice">
             <div class="row">                
-                <form class="form-container col-4">
+                <form class="cabeza__indice__form col-4">
                     <label for="search"></label>
                     <input type="text" placeholder="¿Qué estás buscando?">
                 </form>
 
-                <div class="logo-container col-4">
-                    <img class="logo-cont" src="/imagenes/logo purpura.png" alt="Purpura indumentaria">
+                <div class="cabeza__indice__logo col-4">
+                    <img class="cabeza__indice__logo__cont" src="/imagenes/logo purpura.png" alt="Purpura indumentaria">
                 </div>
 
-                <div class="svg-container col-4">
+                <div class="cabeza__indice__svg col-4">
                     <button aria-label="Ayuda al usuario">
                         <svg fill="#000000" width="64px" height="64px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -66,45 +66,44 @@
             </div>
         </section>
     
-        <nav>
-            <div class="container-fluid nav-container">
-                <div class="row">
-                    <div class="col-12">
-                        <ul>
-                            <li>
-                                <a href="index.html">Inicio</a>
-                            </li>
+        <nav class="container-fluid cabeza__nav">
+            <div class="row">
+                <div class="col-12">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
 
-                            <li>
-                                <a href="/html/productos.html">Productos</a>
-                            </li>
+                        <li>
+                            <a href="/html/productos.html">Productos</a>
+                        </li>
 
-                            <li>
-                                <a href="/html/contacto.html">Contacto</a>
-                            </li>        
-                        </ul> 
-                    </div>
+                        <li>
+                            <a href="/html/contacto.html">Contacto</a>
+                        </li>        
+                    </ul> 
                 </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="carrusel-de-fotos">
+        <section class="index__carrusel">
             <img src="imagenes/carrusel-de-fotos/imagen-principal.jpg" alt="nuevos arrivos 2025">
         </section>
 
-        <section class="presentacion-container container-fluid">
+        <section class="index__presentacion container-fluid">
             <div class="row">
                 <h1 class="col-12">
                     Estilo que Transciende Edades
                 </h1>
 
-                <div class = "texto-presentacion col-lg-12 col-md-12">
+                <div class = "index__presentacion__texto col-lg-12 col-md-12">
                     <p>En Púrpura Indumentaria redefinimos la moda masculina con diseños modernos, únicos y versátiles para hombres de todas las generaciones. Cada prenda está pensada para resaltar tu esencia y acompañarte en cada momento, desde lo casual hasta lo extraordinario. Descubre el equilibrio perfecto entre tendencia, comodidad y calidad. ¡Viste quién eres con Púrpura!</p>
                 </div>
             </div>
 
-            <div class="posibilidades-container row">
+            <div class="index__posibilidades row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <svg fill="#000000" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 496" xml:space="preserve">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -181,14 +180,14 @@
             </div>
         </section>
 
-        <section class="arrivos-container ">
+        <section class="index__arrivos">
             
             <div class="row">
                 <h2 class="col-12">Nuevos ingresos</h2> 
             </div>
             
             
-            <div class="img-arrivos row">
+            <div class="index__arrivos__img row">
                 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <img src="imagenes/arrivos/arrivo1.jpg" alt="Campera verde agua marca roma">
@@ -213,8 +212,8 @@
 
         </section>
 
-        <section class="novedades-container"> 
-            <div class="novedades-info row">
+        <section class="index__novedades"> 
+            <div class="index__novedades__info row">
                 <h2 class="col-12">
                     Novedades y ofertas a un solo click
                 </h2>
@@ -224,7 +223,7 @@
                 </p>
             </div>
 
-            <form class="form-nov-container col-12">
+            <form class="index__novedades__form col-12">
                 <label for="email"></label>
                 <input type="text" placeholder="Email">
             </form>
@@ -233,12 +232,12 @@
 
     </main>
 
-    <footer>
-        <section class="medios-container container-fluid">
+    <footer class="pie">
+        <section class="pie__medios container-fluid">
             <div class="row">
                 <h4 class="col-12 ">Medios de pago:</h4>
 
-                <div class="img-container col-12">
+                <div class="pie__medios__img col-12">
                     <img src="../imagenes/medios-de-pago/banelco@2x.png" alt="Medio de pago banelco">
                     <img src="../imagenes/medios-de-pago/visa@2x.png" alt="Medio de pago visa">
                     <img src="../imagenes/medios-de-pago/diners@2x.png" alt="Medio de pago diners">
@@ -248,9 +247,9 @@
             </div>
         </section>
 
-        <section class = "container-fluid info-container">
+        <section class = "container-fluid pie__info">
             <div class="row">
-                <div class="contacto-container col-lg-6 col-md-12 col-12">
+                <div class="pie__info__contacto col-lg-6 col-md-12 col-12">
                     
                     <div>
                         <h4>Contacto: </h4> 
@@ -307,7 +306,7 @@
                     </div>
                 </div>
 
-                <div class ="redes-container col-lg-6 col-md-12 col-12" >
+                <div class ="pie__redes col-lg-6 col-md-12 col-12" >
                     <div>
                         <h4>Redes: </h4>
                     </div>
@@ -344,7 +343,7 @@
 
         
 
-        <section class="copy-container container-fluid">
+        <section class="pie__copy container-fluid">
             <div class="row">
                 <p class="col-12">Copyright Purpura indumentaria - 2024. Todos los derechos reservados.</p>
             </div>

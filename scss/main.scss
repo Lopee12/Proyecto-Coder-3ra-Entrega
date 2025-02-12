@@ -1,0 +1,12 @@
+//Realizamos los imports ordenados y correspondientes para adaptar los estilos con sass
+
+//Importamos los archivos de config para un buen funcionamiento
+
+@use './config/mixin';
+@use './config/reset';
+
+//Importamos los archivos del encabezado
+
+@use './layout/encabezado';
+@use './layout/main.productos';
+@use './layout/pie';

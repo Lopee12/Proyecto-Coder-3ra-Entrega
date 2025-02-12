@@ -1,0 +1,94 @@
+@use '../config/map-get' as *;
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+
+//Estilos generales del main de productos
+
+.main-productos{
+    @include flex-jc-center();
+    padding: 0 50px;
+
+    //Estilos del nav de productos
+
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        padding: 60px 0 60px 90px;
+        gap: 15px;
+        h2{
+            color: map-get($colores, rojo);
+            font-size: 24px;
+            margin: 0;
+        }
+
+        h3{
+            color: map-get($colores, rojo);
+            margin: 0;
+            font-size: 20px;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            @include margin-padding-general(0);
+            gap: 15px;
+            li{
+                width: 100%;
+                font-size: map-get($fuentes , md );
+            }
+        }
+
+        form{
+            @include flex-jc-center();
+            flex-direction: column;
+            gap: 15px;
+            label{
+                @include flex-ai-center();
+                font-size: map-get($fuentes, md );
+                width: 10%;
+                input{
+                    display: flex;
+                    @include widht-height(18px, 18px);
+                }
+            }
+        }
+
+        div{
+            display: flex;
+            flex-direction: row;
+            gap: $sm;
+        }
+    }
+
+    //Estilos de las imagenes de productos
+
+    &__img{
+        @include flex-ai-jc-center();
+        flex-direction: column;
+        padding: 0;
+        max-width: 1200px;
+        div{
+            text-align: center;
+            justify-content: center;
+            padding: $md 0;
+            p{
+                @include flex-ai-jc-center();
+                font-size: $md;
+                margin-bottom: 0;
+            }
+
+            div{
+                div{
+                    padding: $md;
+                }
+            }
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 5%;
+        }
+    }
+}

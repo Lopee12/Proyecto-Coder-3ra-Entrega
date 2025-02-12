@@ -1,3 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.cabeza {
+  background-color: #B42f29;
+}
+.cabeza__indice {
+  padding: 30px 0;
+  border-bottom: 1px solid #b7b7b7;
+}
+.cabeza__indice__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px, 30px;
+}
+.cabeza__indice__form input {
+  width: 80%;
+  padding: 5px;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  background-color: #B42f29;
+}
+.cabeza__indice__form input::placeholder {
+  color: #b7b7b7;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.cabeza__indice__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.cabeza__indice__logo__cont {
+  width: 200px;
+  height: 55px;
+}
+.cabeza__indice__svg {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-left: 0;
+  padding-right: 30px;
+}
+.cabeza__indice__svg button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.cabeza__indice__svg svg {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  fill: #ffffff;
+}
+.cabeza__nav {
+  width: 100%;
+  padding: 20px 0;
+}
+.cabeza__nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+.cabeza__nav ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.cabeza__nav ul li a:hover {
+  color: #000000;
+}
+
+.main-productos {
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+}
+.main-productos__nav {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0 60px 90px;
+  gap: 15px;
+}
+.main-productos__nav h2 {
+  color: #B42f29;
+  font-size: 24px;
+  margin: 0;
+}
+.main-productos__nav h3 {
+  color: #B42f29;
+  margin: 0;
+  font-size: 20px;
+}
+.main-productos__nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+.main-productos__nav ul li {
+  width: 100%;
+  font-size: 16px;
+}
+.main-productos__nav form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-productos__nav form label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  width: 10%;
+}
+.main-productos__nav form label input {
+  display: flex;
+  width: 18px;
+  height: 18px;
+}
+.main-productos__nav div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.main-productos__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  max-width: 1200px;
+}
+.main-productos__img div {
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.main-productos__img div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.main-productos__img div div div {
+  padding: 20px;
+}
+.main-productos__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.pie {
+  display: flex;
+  flex-direction: column;
+  background-color: #B42f29;
+}
+.pie p {
+  color: #ffffff;
+  font-size: 16px;
+}
+.pie h4 {
+  color: #ffffff;
+  padding: 15px 0;
+}
+.pie__medios {
+  margin: 30px 0 15px 0;
+  padding: 0;
+}
+.pie__medios div {
+  display: flex;
+  align-items: center;
+}
+.pie__medios h4 {
+  margin: 0;
+  padding: 0 45px;
+}
+.pie__medios__img {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 45px;
+  padding-top: 30px;
+}
+.pie__medios__img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.pie_info {
+  padding: 0;
+}
+.pie_info p {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  margin-bottom: 0;
+  height: 40px;
+}
+.pie_info__contacto {
+  padding: 0;
+  margin: 15px 0;
+}
+.pie_info__contacto div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0 45px;
+}
+.pie_info__contacto svg {
+  width: 30px;
+  height: 30px;
+}
+.pie__redes {
+  padding: 0;
+  margin: 15px 0;
+}
+.pie__redes div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0 45px;
+}
+.pie__redes svg {
+  width: 30px;
+  height: 30px;
+}
+.pie__copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 30px 0;
+}
+.pie__copy p {
+  text-align: center;
+  margin-bottom: 0;
+}
 
 /*# sourceMappingURL=main.css.map */
