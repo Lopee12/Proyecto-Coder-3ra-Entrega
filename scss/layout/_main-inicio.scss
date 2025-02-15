@@ -1,0 +1,149 @@
+@use '../config/map-get' as *;
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+
+//Estilos para el main de la página de inicio
+
+.index{
+    &__carrusel{
+        @include flex-ai-jc-center();
+        width: 100%;
+        img{
+            width: 100%;
+            height: 800px;
+        }
+    }
+
+    //Estilos del sector presentacion de la empresa
+
+    &__presentacion{
+        @include flex-ai-jc-center();
+        flex-direction: column;
+        padding: 0;
+        margin: 20px 0;
+        h1{
+            @include flex-ai-jc-center();
+            font-size: 48px;
+            margin: 20px 0;
+            color: map-get($colores , rojo );
+        }
+
+        &__texto{
+            text-align: center;
+            padding: 0;
+            p{
+                display: block;
+                padding: 0 50px;
+                margin: 20px auto;
+                max-width: 1200px;
+            }
+        }
+    }
+
+    //Estilos de las posibilidades de pago y mas
+
+    &__posibilidades{
+        @include flex-ai-center();
+        max-width: 1600px;
+        height: 128px;
+        padding: 30px 40px;
+        div{
+            @include flex-jc-center ();
+            padding: 0 20px;
+            div{
+                @include flex-jc-center ();
+                width: 100%;
+                height: 120px;
+                margin: 0;
+                padding-left: 10px;
+                padding-right: 0;
+                flex-direction: column;
+            }
+
+            h4{
+                font-size: map-get($fuentes, lg );
+                margin: 0;
+                color: map-get($colores, rojo );
+            }
+
+            p{
+                margin: 0;
+                font-size: map-get($fuentes, md );
+            }
+        }
+        svg{
+            width: 30%;
+            height: 120px;
+        }
+    }
+
+    //Estilos del sector arrivos
+
+    &__arrivos{
+        @include flex-jc-center();
+        flex-direction: column;
+        width: 100%;
+        h2{
+            @include flex-ai-jc-center();
+            flex-direction: column;
+            width: 100%;
+            color: map-get($colores, rojo );
+            padding-bottom: 30px;
+            margin: 20px 0;
+        }
+
+        &__img{
+            @include flex-ai-jc-center  ();
+            div{
+                @include flex-ai-jc-center();
+                flex-direction: column;
+                padding: 0;
+                max-width: 250px;
+            }
+            img{
+                width: 210px;
+                border-top-left-radius: 5%;
+                border-top-right-radius: 5%;
+            }
+            p{
+                @include flex-ai-jc-center();
+                font-size: 20px;
+            }
+        }
+    }
+
+    //Estilos del sector novedades
+
+    &__novedades{
+        @include flex-ai-jc-center();
+        flex-direction: column;
+        width: 100%;
+        div{
+            width: 100%;
+        }
+        &__info{
+            h2{
+                @include flex-ai-jc-center();
+                text-align: center;
+                color: map-get($colores, rojo);
+                margin: 20px 0;
+            }
+            p{
+                @include flex-ai-jc-center();
+                text-align: center;
+            }
+        }
+        &__form{
+            @include flex-ai-jc-center();
+            padding: 20px 0;
+            input{
+                width: 30%;
+                padding: 10px ;
+                border-radius: 10px;
+                border: 1px solid;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,71 @@
+@use '../config/map-get' as *;
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+
+
+//Estilos generales del main de contacto
+
+.main-contacto{
+    padding: 0;
+    margin: 40px 0;
+
+    //Estilos de la seccion contacto
+
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+
+        div{
+            @include flex-ai-center();
+            margin: 8px 20px;
+            gap: $sm;
+        }
+
+        h1{
+            color: map-get($colores, rojo );
+        }
+
+        p{
+            margin-bottom: 0;
+        }
+
+        svg{
+            @include widht-height($lg, $lg);
+        }
+    }
+
+    //Estilos del formulario de contacto
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+        gap: 30px;
+
+        div{
+            label{
+                font-size: map-get($fuentes , md);
+            }
+
+            input{
+                display: block;
+                margin: 10px 0;
+                padding: 10px;
+                width: 95%;
+                border-radius: 15px;
+            };
+
+            .input-mensaje{
+                display: block;
+                border-radius: 15px;
+                margin: 10px 0;
+                width: 95%;
+                padding: 10px;
+                height: 300px;
+            }
+        }
+    }
+
+    
+}

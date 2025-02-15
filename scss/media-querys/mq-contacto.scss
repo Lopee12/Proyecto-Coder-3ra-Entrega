@@ -1,0 +1,30 @@
+@use '../config/map-get' as *;
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+@use '../layout/main-contacto' as *;
+
+@media (max-width: 768px){
+    .main-contacto{
+        margin: 10px 0;
+        &__contact{
+            margin-bottom: 10px;
+        }
+        &__form{
+            margin-top: 10px;
+            div{
+                @include flex-ai-center();
+                flex-direction: column;
+                label{
+                    padding-left: 15px;
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+
+    .titulo-contacto{
+        @include flex-ai-jc-center();
+    }
+
+
+}
