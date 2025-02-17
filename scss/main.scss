@@ -1,0 +1,22 @@
+//Realizamos los imports ordenados y correspondientes para adaptar los estilos con sass
+
+//Importamos los archivos de config para un buen funcionamiento
+
+@use './config/mixin';
+@use './config/reset';
+
+//Importamos los archivos del encabezado
+
+@use './layout/encabezado';
+@use './layout/main-inicio';
+@use './layout/main.productos';
+@use './layout/main-contacto';
+@use './layout/pie';
+
+//Importamos los archivos de media querys
+
+@use './media-querys/mq-header';
+@use './media-querys/mq-inicio';
+@use './media-querys/mq-productos';
+@use './media-querys/mq-contacto';
+

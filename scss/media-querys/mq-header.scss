@@ -1,0 +1,24 @@
+@use '../config/map-get' as *;
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+@use '../layout/encabezado' as *;
+
+// Media Queries para el encabezado
+
+@media (max-width: 768px){
+    .cabeza{
+        &__indice{
+            &__logo{
+                @include flex-jc-center();
+                text-align: center;
+                width: 100%;
+            }
+            &__form{
+                display: none;
+            }
+            &__svg{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@use '../config/map-get' as *;
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+@use '../layout/main.productos' as *;
+
+@media (max-width:992px){
+    .main-productos{
+        &__nav{
+            display: none;
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+}

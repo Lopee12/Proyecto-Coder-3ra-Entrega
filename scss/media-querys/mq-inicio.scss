@@ -1,0 +1,115 @@
+@use '../config/map-get' as *;
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+@use '../layout/main-inicio' as *;
+
+// Media Querys para la seccion de inicio
+
+@media (min-width:576px) and (max-width: 992px){
+    .index{
+        &__carrusel img{
+            height: 500px;
+        }
+        &__posibilidades{
+            div{
+                div{
+                    @include flex-jc-center();
+                    flex-direction: column;
+                    width: 100%;
+                    height: 64px;
+                    margin: 0;
+                    padding-left: 10px;
+                    padding-right: 0;
+                }
+                h4{
+                    font-size: map-get($fuentes, md );
+                    margin: 0;
+                }
+                p{
+                    margin:0;
+                    font-size: 12px;
+                }
+            }
+
+            svg{
+                width: 30%;
+                height: 55px;
+            }
+        }
+        &__arrivos{
+            &__img{
+                div{
+                    max-width: 340px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .index{
+        &__posibilidades{
+            @include flex-ai-center ();
+            div{
+                display: flex;
+                align-content: center;
+                padding: 0;
+            }
+        }
+
+        &__gif{
+            padding: 0 20px;
+            &__video{
+                padding: 10px 0;
+                video{
+                    border-radius: 30px;
+                }
+            }
+        }
+
+        &__presentacion{
+            h1{
+                font-size: 32px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width:576px){
+    .index{
+        &__carrusel img{
+            height: 400px;
+        }
+
+        &__posibilidades{
+            @include flex-jc-center();
+            div{
+                max-width: 300px;
+                padding: 5px 0;
+                div{
+                    @include flex-jc-center();
+                    flex-direction: column;
+                    width: 100%;
+                    height: 48px;
+                    margin: 0;
+                    padding-left: 10px;
+                    padding-right: 0;
+                }
+                h4{
+                    font-size: map-get($fuentes, md );
+                    margin: 0;
+                }
+                p{
+                    margin: 0;
+                    max-width: 200px;
+                    font-size: 12px;
+                }
+            }
+            svg{
+                width:30%;
+                height: 55px;
+            }
+        }
+    }
+}

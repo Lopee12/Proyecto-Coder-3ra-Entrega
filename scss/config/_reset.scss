@@ -1,0 +1,12 @@
+@use 'mixin' as *;
+
+*{
+    @include margin-padding-general(0);
+}
+
+html, body{
+    @include margin-padding-general(0);
+    @include widht-height(100%, 100%);
+    overflow-x: hidden;
+}
+

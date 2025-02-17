@@ -1,0 +1,100 @@
+@use '../config/map-get' as *;
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+
+//Estilos generales del footer
+
+.pie{
+    display: flex;
+    flex-direction: column;
+    background-color: map-get($colores, rojo);
+    p{
+        color: map-get($colores, blanco);
+        font-size: map-get($fuentes , md);
+    }
+
+    h4{
+        color: map-get($colores, blanco);
+        padding: 15px 0;
+    }
+
+    //Estilos de los medios de comunicacion
+
+    &__medios{
+        margin: 30px 0 15px 0;
+        padding: 0;
+        div{
+            @include flex-ai-center();
+        }
+        h4{
+            margin: 0;
+            padding: 0 45px;
+        }
+
+        &__img{
+            @include flex-ai-center();
+            gap: 15px;
+            padding-left: 45px;
+            padding-top: 30px;
+            img{
+                @include widht-height(40px, 40px);
+                border-radius: $md;
+            }
+        }
+    }
+
+    //Estilos de la informacion de contacto
+
+    &__info{
+        padding: 0;
+        p{
+            @include  flex-ai-center(); 
+            padding-left: $xsm;
+            margin-bottom: 0;
+            height: 40px;
+        }
+
+        &__contacto{
+            padding: 0;
+            margin: 15px 0;
+            div{
+                @include flex-ai-center();
+                gap: $sm;
+                margin: 0;
+                padding: 0 45px;   
+            }
+
+            svg{
+                @include widht-height($lg,$lg);
+            }
+        }
+    }
+
+    //Estilos de las redes sociales
+    
+    &__redes{
+        padding: 0;
+        margin: 15px 0;
+        div{
+            @include flex-ai-center();
+            gap: $sm;
+            margin: 0;
+            padding: 0 45px;
+        }
+
+        svg{
+            @include widht-height($lg,$lg);
+        }
+    }
+
+    //Estilos del copy
+
+    &__copy{
+        @include flex-ai-jc-center();
+        margin: 15px 0 30px 0;
+        p{
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+}
