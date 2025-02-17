@@ -8,9 +8,16 @@
     &__carrusel{
         @include flex-ai-jc-center();
         width: 100%;
+        padding: 0;
         img{
             width: 100%;
             height: 800px;
+        }
+
+        div{
+            div{
+                padding: 0;
+            }
         }
     }
 
@@ -43,13 +50,17 @@
     //Estilos de las posibilidades de pago y mas
 
     &__posibilidades{
-        @include flex-ai-center();
-        max-width: 1600px;
-        height: 128px;
+        @include flex-ai-jc-center();
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
         padding: 30px 40px;
+        background-color: map-get($colores, rojo-claro);
         div{
             @include flex-jc-center ();
+            align-items: center;
             padding: 0 20px;
+            max-width: 380px;
             div{
                 @include flex-jc-center ();
                 width: 100%;
@@ -63,17 +74,32 @@
             h4{
                 font-size: map-get($fuentes, lg );
                 margin: 0;
-                color: map-get($colores, rojo );
+                align-self: self-start;
             }
 
             p{
                 margin: 0;
                 font-size: map-get($fuentes, md );
+                align-self: self-start;
             }
         }
         svg{
             width: 30%;
-            height: 120px;
+            height: 80px;
+        }
+    }
+
+    //Estilos del gif de descuentos
+
+    &__gif{
+        padding: 20px;
+        &__video{
+            @include flex-ai-jc-center();
+            video{
+                padding: 0;
+                @include widht-height(100%,100%);
+                border-radius: 50px;
+            }
         }
     }
 

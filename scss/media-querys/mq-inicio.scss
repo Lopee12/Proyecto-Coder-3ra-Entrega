@@ -7,6 +7,9 @@
 
 @media (min-width:576px) and (max-width: 992px){
     .index{
+        &__carrusel img{
+            height: 500px;
+        }
         &__posibilidades{
             div{
                 div{
@@ -30,7 +33,7 @@
 
             svg{
                 width: 30%;
-                height: 64px;
+                height: 55px;
             }
         }
         &__arrivos{
@@ -48,8 +51,19 @@
         &__posibilidades{
             @include flex-ai-center ();
             div{
-                @include flex-ai-center();
+                display: flex;
+                align-content: center;
                 padding: 0;
+            }
+        }
+
+        &__gif{
+            padding: 0 20px;
+            &__video{
+                padding: 10px 0;
+                video{
+                    border-radius: 30px;
+                }
             }
         }
 
@@ -64,8 +78,8 @@
 
 @media (max-width:576px){
     .index{
-        &__presentacion{
-            margin-bottom: 200px;
+        &__carrusel img{
+            height: 400px;
         }
 
         &__posibilidades{
@@ -86,10 +100,15 @@
                     font-size: map-get($fuentes, md );
                     margin: 0;
                 }
+                p{
+                    margin: 0;
+                    max-width: 200px;
+                    font-size: 12px;
+                }
             }
             svg{
                 width:30%;
-                height: 64px;
+                height: 55px;
             }
         }
     }

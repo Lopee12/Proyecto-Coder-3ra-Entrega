@@ -16,8 +16,9 @@
         //Estilos del formulario y sus herencias
 
         &__form{
-            @include flex-ai-jc-center();
-            padding: $md, $lg;
+            @include flex-ai-center();
+            justify-content: start;
+            padding: $md $lg;
             input{
                 width: 80%;
                 padding: $xsm;
@@ -25,7 +26,7 @@
                 border: 1px solid map-get($colores , blanco );
                 background-color: map-get($colores , rojo );
                 &::placeholder{
-                    color: map-get($colores , gris );
+                    color: map-get($colores , crema );
                     font-size: map-get($fuentes , sm );
                     padding-left: 10px;
                 }
@@ -70,8 +71,8 @@
         width: 100%;
         padding: $md 0;
         ul{
-            list-style: none;
-            @include flex-ai-center();
+            list-style-type: none;
+            @include flex-ai-jc-center();
             gap: 40px;
             @include margin-padding-general(0);
             li{
