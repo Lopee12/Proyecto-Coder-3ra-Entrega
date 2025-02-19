@@ -182,44 +182,35 @@ html, body {
   height: 100%;
   border-radius: 50px;
 }
-.index__arrivos {
+.index__arrivos__carrusel {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  margin: 50px auto;
-  width: 80%;
+  margin: 0 auto;
+  width: 90%;
 }
-.index__arrivos input {
+.index__arrivos__carrusel input {
   display: none;
 }
-.index__arrivos h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  color: #B42f29;
-  padding-bottom: 30px;
-  margin: 20px 0;
-}
-.index__arrivos__slides {
+.index__arrivos__carrusel__slides {
   display: flex;
   transition: transform 0.5s ease;
 }
-.index__arrivos__slides__slide {
+.index__arrivos__carrusel__slides__slide {
   flex: 0 0 25%;
   padding: 10px;
 }
-.index__arrivos__slides__slide img {
+.index__arrivos__carrusel__slides__slide img {
   width: 100%;
   display: block;
   border-radius: 8px;
 }
-.index__arrivos__nav-btn {
+.index__arrivos__carrusel__nav-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -235,35 +226,44 @@ html, body {
   border-radius: 50%;
   user-select: none;
 }
-.index__arrivos__nav-btn:hover {
+.index__arrivos__carrusel__nav-btn:hover {
   background: rgba(0, 0, 0, 0.8);
 }
-.index__arrivos__prev {
+.index__arrivos__carrusel__prev {
   left: 10px;
 }
-.index__arrivos__next {
+.index__arrivos__carrusel__next {
   right: 10px;
 }
-.index__arrivos__control-1, .index__arrivos__control-2, .index__arrivos__control-3 {
+.index__arrivos__carrusel__control-1, .index__arrivos__carrusel__control-2, .index__arrivos__carrusel__control-3 {
   display: none;
 }
-.index__arrivos #pos1:checked ~ .index__arrivos__slides {
+.index__arrivos__carrusel #pos1:checked ~ .index__arrivos__carrusel__slides {
   transform: translateX(0);
 }
-.index__arrivos #pos2:checked ~ .index__arrivos__slides {
+.index__arrivos__carrusel #pos2:checked ~ .index__arrivos__carrusel__slides {
   transform: translateX(-25%);
 }
-.index__arrivos #pos3:checked ~ .index__arrivos__slides {
+.index__arrivos__carrusel #pos3:checked ~ .index__arrivos__carrusel__slides {
   transform: translateX(-50%);
 }
-.index__arrivos #pos1:checked ~ .index__arrivos__control-1 {
+.index__arrivos__carrusel #pos1:checked ~ .index__arrivos__carrusel__control-1 {
   display: block;
 }
-.index__arrivos #pos2:checked ~ .index__arrivos__control-2 {
+.index__arrivos__carrusel #pos2:checked ~ .index__arrivos__carrusel__control-2 {
   display: block;
 }
-.index__arrivos #pos3:checked ~ .index__arrivos__control-3 {
+.index__arrivos__carrusel #pos3:checked ~ .index__arrivos__carrusel__control-3 {
   display: block;
+}
+.index__arrivos h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #B42f29;
+  padding-bottom: 30px;
+  margin: 20px 0;
 }
 .index__novedades {
   display: flex;
@@ -568,6 +568,20 @@ html, body {
     max-width: 340px;
   }
 }
+@media (max-width: 992px) {
+  .index__arrivos__carrusel__slides__slide {
+    flex: 0 0 33.33%;
+  }
+  .index__arrivos__carrusel #pos1:checked ~ .index__arrivos__carrusel__slides {
+    transform: translateX(0);
+  }
+  .index__arrivos__carrusel #pos2:checked ~ .index__arrivos__carrusel__slides {
+    transform: translateX(-33.33%);
+  }
+  .index__arrivos__carrusel #pos3:checked ~ .index__arrivos__carrusel__slides {
+    transform: translateX(-66.66%);
+  }
+}
 @media (max-width: 768px) {
   .index__posibilidades {
     display: flex;
@@ -590,6 +604,18 @@ html, body {
   .index__presentacion h1 {
     font-size: 32px;
     text-align: center;
+  }
+  .index__arrivos__carrusel__slides__slide {
+    flex: 0 0 50%;
+  }
+  .index__arrivos__carrusel #pos1:checked ~ .index__arrivos__carrusel__slides {
+    transform: translateX(0);
+  }
+  .index__arrivos__carrusel #pos2:checked ~ .index__arrivos__carrusel__slides {
+    transform: translateX(-50%);
+  }
+  .index__arrivos__carrusel #pos3:checked ~ .index__arrivos__carrusel__slides {
+    transform: translateX(-100%);
   }
 }
 @media (max-width: 576px) {

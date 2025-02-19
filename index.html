@@ -226,33 +226,34 @@
 
         </section>
 
-        <div class="index__arrivos">
-            <!-- 1) Radio inputs para cada posición del "slide" -->
-            <input type="radio" name="position" id="pos1" checked>
-            <input type="radio" name="position" id="pos2">
-            <input type="radio" name="position" id="pos3">
-          
-            <!-- 2) Contenedor que aloja todas las imágenes -->
-            <div class="index__arrivos__slides">
-              <div class="index__arrivos__slides__slide"><img src="./imagenes/productos/producto1.jpg" alt="1"></div>
-              <div class="index__arrivos__slides__slide"><img src="./imagenes/productos/producto2.jpg" alt="2"></div>
-              <div class="index__arrivos__slides__slide"><img src="./imagenes/productos/producto3.jpg" alt="3"></div>
-              <div class="index__arrivos__slides__slide"><img src="./imagenes/productos/producto4.jpg" alt="4"></div>
-              <div class="index__arrivos__slides__slide"><img src="./imagenes/productos/producto5.jpg" alt="5"></div>
-              <div class="index__arrivos__slides__slide"><img src="./imagenes/productos/producto6.jpg" alt="6"></div>
+        <section class="index__arrivos">
+
+            <div class="row">
+                <h2 class="col-12">Nuevos ingresos</h2> 
             </div>
-          
-            <!-- 3) Botones de navegación (prev / next) -->
-            <!-- Para la posición 1 (pos1), solo hay "Siguiente" -->
-            <label for="pos2" class="index__arrivos__nav-btn index__arrivos__next index__arrivos__control-1">&#10095;</label>
-          
-            <!-- Para la posición 2 (pos2), hay "Anterior" y "Siguiente" -->
-            <label for="pos1" class="index__arrivos__nav-btn index__arrivos__prev index__arrivos__control-2">&#10094;</label>
-            <label for="pos3" class="index__arrivos__nav-btn index__arrivos__next index__arrivos__control-2">&#10095;</label>
-          
-            <!-- Para la posición 3 (pos3), solo hay "Anterior" -->
-            <label for="pos2" class="index__arrivos__nav-btn index__arrivos__prev index__arrivos__control-3">&#10094;</label>
-        </div>
+
+            <div class="index__arrivos__carrusel">
+                
+                <input type="radio" name="position" id="pos1" checked>
+                <input type="radio" name="position" id="pos2">
+                <input type="radio" name="position" id="pos3">
+
+                <div class="index__arrivos__carrusel__slides">
+                    <div class="index__arrivos__carrusel__slides__slide"><img src="./imagenes/productos/producto1.jpg" alt="1"></div>
+                    <div class="index__arrivos__carrusel__slides__slide"><img src="./imagenes/productos/producto2.jpg" alt="2"></div>
+                    <div class="index__arrivos__carrusel__slides__slide"><img src="./imagenes/productos/producto3.jpg" alt="3"></div>
+                    <div class="index__arrivos__carrusel__slides__slide"><img src="./imagenes/productos/producto4.jpg" alt="4"></div>
+                    <div class="index__arrivos__carrusel__slides__slide"><img src="./imagenes/productos/producto5.jpg" alt="5"></div>
+                    <div class="index__arrivos__carrusel__slides__slide"><img src="./imagenes/productos/producto6.jpg" alt="6"></div>
+                </div>
+
+                <label for="pos2" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__next index__arrivos__carrusel__control-1">&#10095;</label>
+                <label for="pos1" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__prev index__arrivos__carrusel__control-2">&#10094;</label>
+                <label for="pos3" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__next index__arrivos__carrusel__control-2">&#10095;</label>
+                <label for="pos2" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__prev index__arrivos__carrusel__control-3">&#10094;</label>
+            </div>
+            
+        </section>
 
         <section class="index__novedades"> 
             <div class="index__novedades__info row">
