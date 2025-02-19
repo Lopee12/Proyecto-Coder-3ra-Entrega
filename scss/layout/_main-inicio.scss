@@ -158,6 +158,42 @@
                 background: rgba(0,0,0,0.8);
             }
         }
+
+        &__prev{
+            left: 10px;
+        }
+
+        &__next{
+            right: 10px;
+        }
+
+        &__control-1, &__control-2, &__control-3{
+            display: none;
+        }
+
+        #pos1:checked ~ .index__arrivos__slides{
+            transform: translateX(0);
+        }
+
+        #pos2:checked ~ .index__arrivos__slides {
+            transform: translateX(-25%);
+          }
+
+        #pos3:checked ~ .index__arrivos__slides {
+            transform: translateX(-50%);
+        }
+
+        #pos1:checked ~ .index__arrivos__control-1{
+            display: block
+        }
+
+        #pos2:checked ~ .index__arrivos__control-2{
+            display: block
+        }
+
+        #pos3:checked ~ .index__arrivos__control-3{
+            display: block
+        }
     }
 
     //Estilos del sector novedades

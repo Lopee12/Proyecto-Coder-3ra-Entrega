@@ -238,6 +238,33 @@ html, body {
 .index__arrivos__nav-btn:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+.index__arrivos__prev {
+  left: 10px;
+}
+.index__arrivos__next {
+  right: 10px;
+}
+.index__arrivos__control-1, .index__arrivos__control-2, .index__arrivos__control-3 {
+  display: none;
+}
+.index__arrivos #pos1:checked ~ .index__arrivos__slides {
+  transform: translateX(0);
+}
+.index__arrivos #pos2:checked ~ .index__arrivos__slides {
+  transform: translateX(-25%);
+}
+.index__arrivos #pos3:checked ~ .index__arrivos__slides {
+  transform: translateX(-50%);
+}
+.index__arrivos #pos1:checked ~ .index__arrivos__control-1 {
+  display: block;
+}
+.index__arrivos #pos2:checked ~ .index__arrivos__control-2 {
+  display: block;
+}
+.index__arrivos #pos3:checked ~ .index__arrivos__control-3 {
+  display: block;
+}
 .index__novedades {
   display: flex;
   align-items: center;
