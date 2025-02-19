@@ -52,7 +52,7 @@
             &__carrusel{
                 &__slides{
                     &__slide{
-                        flex: 0 0 33.33%;
+                        flex: 0 0 calc((100% - 40px)/3);
                     }
                 }
 
@@ -105,7 +105,7 @@
             &__carrusel{
                 &__slides{
                     &__slide{
-                        flex: 0 0 50%;
+                        flex: 0 0 calc((100% - 20px) /2);
                     }
                 }
 

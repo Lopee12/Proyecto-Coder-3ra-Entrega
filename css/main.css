@@ -187,28 +187,37 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 }
 .index__arrivos__carrusel input {
   display: none;
 }
 .index__arrivos__carrusel__slides {
   display: flex;
+  text-align: center;
+  gap: 20px;
   transition: transform 0.5s ease;
 }
+.index__arrivos__carrusel__slides p {
+  margin: 0;
+}
+.index__arrivos__carrusel__slides h5 {
+  margin: 0;
+}
 .index__arrivos__carrusel__slides__slide {
-  flex: 0 0 25%;
-  padding: 10px;
+  flex: 0 0 calc((100% - 60px) / 4);
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
 }
 .index__arrivos__carrusel__slides__slide img {
   width: 100%;
   display: block;
-  border-radius: 8px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 .index__arrivos__carrusel__nav-btn {
   position: absolute;
@@ -570,7 +579,7 @@ html, body {
 }
 @media (max-width: 992px) {
   .index__arrivos__carrusel__slides__slide {
-    flex: 0 0 33.33%;
+    flex: 0 0 calc((100% - 40px) / 3);
   }
   .index__arrivos__carrusel #pos1:checked ~ .index__arrivos__carrusel__slides {
     transform: translateX(0);
@@ -606,7 +615,7 @@ html, body {
     text-align: center;
   }
   .index__arrivos__carrusel__slides__slide {
-    flex: 0 0 50%;
+    flex: 0 0 calc((100% - 20px) / 2);
   }
   .index__arrivos__carrusel #pos1:checked ~ .index__arrivos__carrusel__slides {
     transform: translateX(0);

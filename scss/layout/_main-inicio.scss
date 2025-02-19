@@ -109,12 +109,12 @@
         &__carrusel{
             @include flex-ai-jc-center();
             flex-direction: column;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            // box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            // border-radius: 20px;
             overflow: hidden;
             position: relative;
             margin:  0 auto;
-            width: 90%;    
+            width: 80%;    
 
             input{
                 display: none;
@@ -122,14 +122,28 @@
 
             &__slides{
                 display: flex;
+                text-align: center;
+                gap: 20px;
                 transition: transform 0.5s ease;
+
+                p{
+                    margin: 0;
+                }
+
+                h5{
+                    margin: 0;
+                }
+
                 &__slide{
-                    flex: 0 0 25%;
-                    padding: 10px;
+                    flex: 0 0 calc((100% - 60px)/4);
+                    padding: 0;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                    border-radius: 30px;
                     img{
                         width: 100%;
                         display: block;
-                        border-radius: 8px;
+                        border-top-left-radius: 30px;
+                        border-top-right-radius: 30px;
                     }
                 }
             }
