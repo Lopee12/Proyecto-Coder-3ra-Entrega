@@ -106,45 +106,109 @@
     //Estilos del sector arrivos
 
     &__arrivos{
+        
         &__carrusel{
             @include flex-ai-jc-center();
             flex-direction: column;
-            // box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            // border-radius: 20px;
             overflow: hidden;
             position: relative;
-            margin:  0 auto;
-            width: 80%;    
-
+            margin:  0 auto ;
+            padding: 1% 0;
+            min-width: 1320px;
+            width: 70%;
+            
             input{
                 display: none;
             }
 
             &__slides{
+                width: 100%;
                 display: flex;
                 text-align: center;
-                gap: 20px;
-                transition: transform 0.5s ease;
-
+                gap: 4%;
+                padding: 0;
+                height: 530px;
+                
+                                
                 p{
+                    width: 100%;
+                    overflow: visible;
                     margin: 0;
+                    white-space: nowrap;
                 }
 
                 h5{
                     margin: 0;
+                    padding: 5% 5% 0 5%;
+                    font-weight: bold;
+                    color: map-get($colores, rojo );
                 }
 
                 &__slide{
-                    flex: 0 0 calc((100% - 60px)/4);
+                    position: relative;
+                    flex: 0 0 calc((100% - 15.5%)/4);
                     padding: 0;
-                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-                    border-radius: 30px;
+                    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+                    transition: box-shadow 0.3s ease,height 0.3s ease;
+                    border-radius: 30px;  
+                    height: 87%;
+                    
                     img{
-                        width: 100%;
+                        width: 100%;                 
                         display: block;
                         border-top-left-radius: 30px;
                         border-top-right-radius: 30px;
                     }
+
+                    &__descripcion{
+                        padding: 2%;
+                        font-size: 18px;
+                    }
+
+                    &__cuotas{
+                        padding: 0 2%;
+                        font-size: 14px;
+                    }
+
+                    &__botones{
+                        
+                        @include flex-ai-jc-center();
+                        gap: 5%;
+                        width: 100%;
+                        padding: 5% 0;
+                        bottom: 2%;
+                        flex-direction: row;                        
+                        transition: opacity 0.3s ease;
+                        opacity: 0;
+                        
+                        button{
+                            border-radius: 30px;
+                            padding: 4%;
+                            width: 40%;  
+                        }
+
+                        &__boton-1{
+                            background-color: map-get($colores, rojo );
+                            border: 0;
+                            color: map-get($colores, blanco );
+                        }
+
+                        &__boton-2{
+                            background-color: map-get($colores, blanco );
+                            border: 1px solid map-get($colores, rojo );
+                            color: map-get($colores, rojo );
+                        }
+                    }
+
+                    &:hover{
+                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);        
+                        height: 100%;
+                        .index__arrivos__carrusel__slides__slide__botones{
+                            opacity: 1;
+                        }
+                    }
+                    
+
                 }
             }
     
@@ -169,14 +233,14 @@
             }
     
             &__prev{
-                left: 10px;
+                left: 1%;
             }
     
             &__next{
-                right: 10px;
+                right: 4%;
             }
     
-            &__control-1, &__control-2, &__control-3{
+            &__control-1, &__control-2, &__control-3, &__control-4, &__control-5, &__control-6, &__control-7{
                 display: none;
             }
     
@@ -191,6 +255,22 @@
             #pos3:checked ~ .index__arrivos__carrusel__slides {
                 transform: translateX(-50%);
             }
+
+            #pos4:checked ~ .index__arrivos__carrusel__slides {
+                transform: translateX(-75%);
+            }
+
+            #pos5:checked ~ .index__arrivos__carrusel__slides {
+                transform: translateX(-100%);
+            }
+
+            #pos6:checked ~ .index__arrivos__carrusel__slides {
+                transform: translateX(-125%);
+            }
+
+            #pos7:checked ~ .index__arrivos__carrusel__slides {
+                transform: translateX(-150%);
+            }
     
             #pos1:checked ~ .index__arrivos__carrusel__control-1{
                 display: block
@@ -201,6 +281,22 @@
             }
     
             #pos3:checked ~ .index__arrivos__carrusel__control-3{
+                display: block
+            }
+
+            #pos4:checked ~ .index__arrivos__carrusel__control-4{
+                display: block
+            }
+
+            #pos5:checked ~ .index__arrivos__carrusel__control-5{
+                display: block
+            }
+
+            #pos6:checked ~ .index__arrivos__carrusel__control-6{
+                display: block
+            }
+
+            #pos7:checked ~ .index__arrivos__carrusel__control-7{
                 display: block
             }
         }
@@ -221,6 +317,7 @@
         @include flex-ai-jc-center();
         flex-direction: column;
         width: 100%;
+        margin-bottom: 3%;
         div{
             width: 100%;
         }

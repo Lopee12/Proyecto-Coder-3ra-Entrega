@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Purpura indumentaria, pagina web dedicada a la venta de ropa masculina de moda">
+    <meta name="keywords" content="Purpura indumentaria ropa masculina moderna descuentos efectivo cuotas sin interes "> 
+
+    <link rel="icon" href="./imagenes/logo-2.jpg" type="image/jpg" >
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>Purpura</title>
@@ -11,21 +16,34 @@
 
 <body>
 
-    <!-- Encabezado de la pagina -->
+    <!-- Encabezado de la seccion productos -->
 
     <header class="cabeza">
+
+        <!-- Seccion administradora del indice completo -->
+
         <section class="container-fluid cabeza__indice">
-            <div class="row">                
+            <div class="row">    
+                
+                <!-- formulario para realizar busquedas -->
+
                 <form class="cabeza__indice__form col-4">
                     <label for="search"></label>
                     <input type="text" placeholder="¿Qué estás buscando?">
                 </form>
 
+                <!-- Divisor que contiene el logo de la pagina -->
+
                 <div class="cabeza__indice__logo col-4">
                     <img class="cabeza__indice__logo__cont" src="/imagenes/logo purpura.png" alt="Purpura indumentaria">
                 </div>
 
+                <!-- Divisor que contiene los svg ubicados a la derecha del indice  -->
+
                 <div class="cabeza__indice__svg col-4">
+
+                    <!-- Boton ayuda al usuario -->
+
                     <button aria-label="Ayuda al usuario">
                         <svg fill="#000000" width="64px" height="64px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -35,6 +53,8 @@
                             </g>
                         </svg>
                     </button>
+
+                    <!-- Boton perfil de usuario -->
 
                     <button aria-label="Perfil del usuario">
                         <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003">
@@ -47,6 +67,8 @@
                             </g>
                         </svg>                    
                     </button>
+
+                    <!-- Boton carrito de compras -->
 
                     <button aria-label="Ver carrito de compras">
                         <svg height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
@@ -65,6 +87,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Barra de navegacion del indice -->
     
         <nav class="container-fluid cabeza__nav">
             <div class="row">
@@ -75,11 +99,11 @@
                         </li>
 
                         <li>
-                            <a href="/html/productos.html">Productos</a>
+                            <a href="./html/productos.html">Productos</a>
                         </li>
 
                         <li>
-                            <a href="/html/contacto.html">Contacto</a>
+                            <a href="./html/contacto.html">Contacto</a>
                         </li>        
                     </ul> 
                 </div>
@@ -87,25 +111,33 @@
         </nav>
     </header>
 
+    <!-- main del index de la pagina -->
+
     <main>
         
         <!-- Carrusel de fotos sacado de bootstrap -->
 
         <section id="carouselExampleAutoplaying" class="carousel slide index__carrusel container-fluid" data-bs-ride="carousel">
             <div class="carousel-inner row">
+
+                <!-- contenedor de las imagenes del carrusel -->
+
                 <div class="col-12">
                     <div class="carousel-item active">
-                        <img src="imagenes/carrusel-de-fotos/Foto-Carrousel-1.jpg" class="d-block w-100" alt="...">
+                        <img src="imagenes/carrusel-de-fotos/Foto-Carrousel-1.jpg" class="d-block w-100" alt="30% de descuento en la tienda">
                     </div>
                     <div class="carousel-item">
-                        <img src="imagenes/carrusel-de-fotos/Foto-Carrosuel-4.jpg" class="d-block w-100" alt="...">
+                        <img src="imagenes/carrusel-de-fotos/Foto-Carrosuel-4.jpg" class="d-block w-100" alt="Camisas y chombas tejidas">
                     </div>
                     <div class="carousel-item">
-                        <img src="imagenes/carrusel-de-fotos/Foto-Carrousel-3.jpg" class="d-block w-100" alt="...">
+                        <img src="imagenes/carrusel-de-fotos/Foto-Carrousel-3.jpg" class="d-block w-100" alt="Alquiler de trajes">
                     </div>
                     <div class="carousel-item">
-                        <img src="imagenes/carrusel-de-fotos/Foto-Carrousel-2.jpg" class="d-block w-100" alt="...">
+                        <img src="imagenes/carrusel-de-fotos/Foto-Carrousel-2.jpg" class="d-block w-100" alt="Venta de trajes">
                     </div>
+
+                    <!-- Botones para el movimiento del carrusel -->
+
                     </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -119,6 +151,8 @@
               
         </section>
 
+        <!-- Sector de presentacion de la pagina -->
+
         <section class="index__presentacion container-fluid">
             <div class="row">
                 <h1 class="col-12">
@@ -130,7 +164,12 @@
                 </div>
             </div>
 
+            <!-- Sector de posibilidades (descuentos, cuotas y mas) -->
+
             <div class="index__posibilidades row">
+
+                <!-- Divisor de envios gratis -->
+
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <svg fill="#000000" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 496" xml:space="preserve">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -152,6 +191,8 @@
                     </div>
                 </div>
 
+                <!-- Divisor de descuento -->
+
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <svg width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -172,6 +213,8 @@
                     </div>
                 </div>
 
+                <!-- Divisor de cuotas sin interes -->
+
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -187,6 +230,8 @@
                     </div>
                     
                 </div>
+
+                <!-- Cambios y devoluciones -->
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <svg width="64px" height="64px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -207,14 +252,21 @@
             </div>
         </section>
 
+        <!-- Seccion de videos  -->
+
         <section class="index__gif container-fluid">
             <div class="row">
+
+                <!-- Video 1 -->
+
                 <div class="col-sm-12 col-xs-12 col-xl-6 col-lg-6 col-md-6 index__gif__video">
                     <video autoplay loop muted playsinline>
                         <source src="./imagenes/gif/Video-index.mp4" type="video/mp4">
                         Tu navegador no soporta la etiqueta de video.
                     </video>
                 </div>
+
+                <!-- Video 2 -->
 
                 <div class="col-sm-12 col-xs-12 col-xl-6 col-lg-6 col-md-6 index__gif__video">
                     <video autoplay loop muted playsinline>
@@ -226,54 +278,185 @@
 
         </section>
 
+        <!-- Sector de nuevos ingresos -->
+
         <section class="index__arrivos">
 
             <div class="row">
                 <h2 class="col-12">Nuevos ingresos</h2> 
             </div>
 
-            <div class="index__arrivos__carrusel">
+            <!-- Carrusel de imagenes unidireccional -->
+
+            <div class="index__arrivos__carrusel row">
+
+                <!-- comandos de movimiento del carrusel -->
                 
                 <input type="radio" name="position" id="pos1" checked>
                 <input type="radio" name="position" id="pos2">
                 <input type="radio" name="position" id="pos3">
+                <input type="radio" name="position" id="pos4">
+                <input type="radio" name="position" id="pos5">
+                <input type="radio" name="position" id="pos6">
+
+                <!-- imagenes dentro del carrusel -->
 
                 <div class="index__arrivos__carrusel__slides">
+
+                    <!-- imagen 1 -->
+
                     <div class="index__arrivos__carrusel__slides__slide">
-                        <img src="./imagenes/productos/producto1.jpg" alt="1">
-                        <p>Descripcion del producto</p>
-                        <h5>Precio del producto</h5>
-                        <p>Cuotas sin intereres</p>
+
+                        <img src="./imagenes/arrivos/arrivo1.jpg" alt="Campera A">
+                        <p class="index__arrivos__carrusel__slides__slide__descripcion">Campera A media estacion</p>
+                        <h5>$45.000,00</h5>
+                        <p class="index__arrivos__carrusel__slides__slide__cuotas">6 cuotas sin interes de $7.500</p>
+                        
+                        
+                        <div class="index__arrivos__carrusel__slides__slide__botones">
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-1">Comprar</button>
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-2">Ver</button>    
+                        </div>
+                        
                     </div>
                     
-                    <div class="index__arrivos__carrusel__slides__slide">
-                        <img src="./imagenes/productos/producto2.jpg" alt="2">
-                    </div>
+                    <!-- imagen 2 -->
 
                     <div class="index__arrivos__carrusel__slides__slide">
-                        <img src="./imagenes/productos/producto3.jpg" alt="3">
+                        <img src="./imagenes/arrivos/arrivo2.jpg" alt="Conjunto de lino">
+                        <p class="index__arrivos__carrusel__slides__slide__descripcion">Conjunto de lino</p>
+                        <h5>$60.000,00</h5>
+                        <p class="index__arrivos__carrusel__slides__slide__cuotas">6 cuotas sin interes de $10.000</p>
+
+                        <div class="index__arrivos__carrusel__slides__slide__botones">
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-1">Comprar</button>
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-2">Ver</button>    
+                        </div>
                     </div>
 
-                    <div class="index__arrivos__carrusel__slides__slide">
-                        <img src="./imagenes/productos/producto4.jpg" alt="4">
-                    </div>
+                    <!-- imagen 3 -->
 
                     <div class="index__arrivos__carrusel__slides__slide">
-                        <img src="./imagenes/productos/producto5.jpg" alt="5">
+                        <img src="./imagenes/arrivos/arrivo3.jpg" alt="Pantalon MOM">
+                        <p class="index__arrivos__carrusel__slides__slide__descripcion">Pantalon MOM</p>
+                        <h5>$35.550,00</h5>
+                        <p class="index__arrivos__carrusel__slides__slide__cuotas">6 cuotas sin interes de $5.925</p>
+
+                        <div class="index__arrivos__carrusel__slides__slide__botones">
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-1">Comprar</button>
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-2">Ver</button>    
+                        </div>
                     </div>
 
+                    <!-- imagen 4 -->
+
                     <div class="index__arrivos__carrusel__slides__slide">
-                        <img src="./imagenes/productos/producto6.jpg" alt="6">
+                        <img src="./imagenes/arrivos/arrivo4.jpg" alt="Malla aruba">
+                        <p class="index__arrivos__carrusel__slides__slide__descripcion">Malla aruba</p>
+                        <h5>$20.000,00</h5>
+                        <p class="index__arrivos__carrusel__slides__slide__cuotas">6 cuotas sin interes de $3.333,33</p>
+
+                        <div class="index__arrivos__carrusel__slides__slide__botones">
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-1">Comprar</button>
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-2">Ver</button>    
+                        </div>
                     </div>
+
+                    <!-- imagen 5 -->
+
+                    <div class="index__arrivos__carrusel__slides__slide">
+                        <img src="./imagenes/arrivos/arrivo5.jpg" alt="Campera jean oversize">
+                        <p class="index__arrivos__carrusel__slides__slide__descripcion">Campera jean oversize</p>
+                        <h5>$60.000,00</h5>
+                        <p class="index__arrivos__carrusel__slides__slide__cuotas">6 cuotas sin interes de $10.000</p>
+
+                        <div class="index__arrivos__carrusel__slides__slide__botones">
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-1">Comprar</button>
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-2">Ver</button>    
+                        </div>
+                    </div>
+
+                    <!-- imagen 6 -->
+
+                    <div class="index__arrivos__carrusel__slides__slide">
+                        <img src="./imagenes/arrivos/arrivo6.jpg" alt="Remera oversize A">
+                        <p class="index__arrivos__carrusel__slides__slide__descripcion">Remera oversize A</p>
+                        <h5>$25.000,00</h5>
+                        <p class="index__arrivos__carrusel__slides__slide__cuotas">6 cuotas sin interes de $4.166,66</p>
+
+                        <div class="index__arrivos__carrusel__slides__slide__botones">
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-1">Comprar</button>
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-2">Ver</button>    
+                        </div>
+                    </div>
+
+                    <!-- imagen 7 -->
+
+                    <div class="index__arrivos__carrusel__slides__slide">
+                        <img src="./imagenes/arrivos/arrivo7.jpg" alt="Zapatillas novo">
+                        <p class="index__arrivos__carrusel__slides__slide__descripcion">Zapatillas novo</p>
+                        <h5>$35.000,00</h5>
+                        <p class="index__arrivos__carrusel__slides__slide__cuotas">6 cuotas sin interes de $5.833,33</p>
+
+                        <div class="index__arrivos__carrusel__slides__slide__botones">
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-1">Comprar</button>
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-2">Ver</button>    
+                        </div>
+                    </div>
+
+                    <!-- imagen 8 -->
+
+                    <div class="index__arrivos__carrusel__slides__slide">
+                        <img src="./imagenes/arrivos/arrivo8.jpg" alt="Camisa de lino manga larga">
+                        <p class="index__arrivos__carrusel__slides__slide__descripcion">Camisa de lino manga larga</p>
+                        <h5>$50.000,00</h5>
+                        <p class="index__arrivos__carrusel__slides__slide__cuotas">6 cuotas sin interes de $8.333,33</p>
+
+                        <div class="index__arrivos__carrusel__slides__slide__botones">
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-1">Comprar</button>
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-2">Ver</button>    
+                        </div>
+                    </div>
+
+                    <!-- imagen 9 -->
+
+                    <div class="index__arrivos__carrusel__slides__slide">
+                        <img src="./imagenes/arrivos/arrivo9.jpg" alt="Mochila negra clasica">
+                        <p class="index__arrivos__carrusel__slides__slide__descripcion">Mochila negra clasica</p>
+                        <h5>$38.000,00</h5>
+                        <p class="index__arrivos__carrusel__slides__slide__cuotas">6 cuotas sin interes de $6.333,33</p>
+
+                        <div class="index__arrivos__carrusel__slides__slide__botones">
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-1">Comprar</button>
+                            <button class="index__arrivos__carrusel__slides__slide__botones__boton-2">Ver</button>    
+                        </div>
+                    </div>
+
                 </div>
 
+                <!-- label de las posiciones del carrusel -->
+
                 <label for="pos2" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__next index__arrivos__carrusel__control-1">&#10095;</label>
+
                 <label for="pos1" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__prev index__arrivos__carrusel__control-2">&#10094;</label>
                 <label for="pos3" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__next index__arrivos__carrusel__control-2">&#10095;</label>
+
                 <label for="pos2" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__prev index__arrivos__carrusel__control-3">&#10094;</label>
+                <label for="pos4" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__next index__arrivos__carrusel__control-3">&#10095;</label>
+
+                <label for="pos3" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__prev index__arrivos__carrusel__control-4">&#10094;</label>
+                <label for="pos5" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__next index__arrivos__carrusel__control-4">&#10095;</label>
+
+                <label for="pos4" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__prev index__arrivos__carrusel__control-5">&#10094;</label>
+                <label for="pos6" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__next index__arrivos__carrusel__control-5">&#10095;</label>
+
+                <label for="pos5" class="index__arrivos__carrusel__nav-btn index__arrivos__carrusel__prev index__arrivos__carrusel__control-6">&#10094;</label>
+                
             </div>
             
         </section>
+
+        <!-- Seccion de novedades del index -->
 
         <section class="index__novedades"> 
             <div class="index__novedades__info row">
@@ -293,7 +476,12 @@
         </section>
     </main>
 
+    <!-- Seccion del footer de la pagina -->
+
     <footer class="pie">
+
+        <!-- Contenedor de la seccion medios de pago -->
+
         <section class="pie__medios container-fluid">
             <div class="row">
                 <h4 class="col-12 ">Medios de pago:</h4>
@@ -308,14 +496,21 @@
             </div>
         </section>
 
+        <!-- Contenedor de la seccion de informacion -->
+
         <section class = "container-fluid pie__info">
             <div class="row">
+
+                <!-- Contenedor de la seccion de contacto dentro de informacion  -->
+
                 <div class="pie__info__contacto col-lg-6 col-md-12 col-12">
                     
                     <div>
                         <h4>Contacto: </h4> 
                     </div>
                     
+                    <!-- Divisor de numero celular -->
+
                     <div>
                         <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -327,6 +522,8 @@
 
                         <p>+542236344850</p>
                     </div>
+
+                    <!-- Divisor del numero telefonico  -->
                         
                     <div>
                         <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)">
@@ -340,6 +537,8 @@
                         <p>0223 480-0227</p>
                     </div>
 
+                    <!-- Divisor del email -->
+
                     <div>
                         <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -352,6 +551,8 @@
 
                         <p>purpuraindumentaria.oficial@gmail.com</p>
                     </div>
+
+                    <!-- Divisor de la ubicacion -->
 
                     <div>
                         <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -367,10 +568,14 @@
                     </div>
                 </div>
 
+                <!-- Contenedor de las redes sociales dentro de la seccion informacion -->
+
                 <div class ="pie__redes col-lg-6 col-md-12 col-12" >
                     <div>
                         <h4>Redes: </h4>
                     </div>
+
+                    <!-- Divisor de la red social instagram -->
                     
                     <div>
                         <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -385,6 +590,8 @@
 
                         <p>Instagram</p>
                     </div>
+
+                    <!-- Divisor de la red social Facebook -->
 
                     <div>
                         <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -402,7 +609,7 @@
             </div>
         </section>
 
-        
+        <!-- Seccion copyryght dentro del footer -->
 
         <section class="pie__copy container-fluid">
             <div class="row">
