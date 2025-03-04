@@ -5,5 +5,4 @@
 En esta ocasion, decidi llevar a cabo una pagina web de venta de ropa masculina. Esta idea viene a raiz de que tengo un familiar cercano el cual tiene un local de ropa masculina el cual no posee una pagina web que interactue con los clientes via web sino que lo hace a traves de las redes sociales unicamente. Por este motivo decidi llevar a cabo este proyecto para ver si el dia de manana agregando otros lenguajes de programacion y completando el proyecto en su totalidad lo pueda implementar para el local de mi familiar. 
 Por otro lado, decidi encaminarme en este curso para no perder ritmo en la programacion durante la temporada y mantenerme ocupado con desafios nuevos y adquirir nuevos conocimientos.
 
-
-
+Dejo el link de netlify para que puedan ver la pagina de otra manera sin tener que andar descargando ningun archivo. https://purpura-indumentaria.netlify.app/
